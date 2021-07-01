@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_sigin"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.fanfiq.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_create_fanfic"
+        android:name="com.example.fanfiq.ui.add.AddFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_create_fanfiq">
+        <action
+            android:id="@+id/action_navigation_create_fanfic_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.fanfiq.ui.profile.ProfileFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/navigation_sigin"
+        android:name="com.example.fanfiq.ui.auth.login.LoginFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_sigin" >
+        <action
+            android:id="@+id/action_navigation_sigin_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.example.fanfiq.ui.auth.registration.RegistrationFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_navigation_register_to_navigation_sigin"
+            app:destination="@id/navigation_sigin" />
+        <action
+            android:id="@+id/action_navigation_register_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionFragment"
+        android:name="com.example.fanfiq.ui.connection.ConnectionFragment"
+        android:label="fragment_server_error"
+        tools:layout="@layout/fragment_no_connection" >
+        <action
+            android:id="@+id/action_connectionFragment_to_navigation_sigin"
+            app:destination="@id/navigation_sigin" />
+        <action
+            android:id="@+id/action_connectionFragment_to_navigation_register"
+            app:destination="@id/navigation_register" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.example.fanfiq.ui.error.ErrorFragment"
+        android:label="fragment_server_error"
+        tools:layout="@layout/fragment_server_error" >
+        <action
+            android:id="@+id/action_errorFragment2_to_navigation_sigin"
+            app:destination="@id/navigation_sigin" />
+        <action
+            android:id="@+id/action_errorFragment2_to_navigation_register"
+            app:destination="@id/navigation_register" />
+    </fragment>
+
+
+</navigation>

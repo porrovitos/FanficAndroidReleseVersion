@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.error.ErrorFragment">
+
+
+    <TextView
+        android:id="@+id/textNoConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:text="@string/server_connection_error"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/imageNoConnection"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/server_error"
+        android:layout_marginTop="-40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textNoConnection"/>
+
+</RelativeLayout>

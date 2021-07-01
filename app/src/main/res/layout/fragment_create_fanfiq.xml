@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.AddFragment"
+    >
+
+
+    <TextView
+        android:id="@+id/text_create_page_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/create_fanfic"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/input_create_fancif_name"
+        android:layout_width="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_create_page_header"
+        android:ems="10"
+        android:layout_marginStart="20dp"
+        android:hint="@string/fanfic_name"
+        android:inputType="text" />
+    <ListView
+        android:id="@+id/ListViewWithAllCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:layout_below="@id/input_create_fancif_name"/>
+    <EditText
+        android:id="@+id/input_subtitle_add"
+        android:layout_width="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ListViewWithAllCreate"
+        android:ems="10"
+        android:layout_marginStart="20dp"
+        android:hint="@string/subtitle"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/input_subtext_add"
+        android:layout_width="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_subtitle_add"
+        android:ems="10"
+        android:layout_marginStart="20dp"
+        android:hint="@string/subtext"
+        android:inputType="text" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_part_to_fanfic"
+        android:id="@+id/button_add_title"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_subtext_add"/>
+
+    <Button
+        android:id="@+id/button_create_fanfic"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_add_title" />
+</RelativeLayout>

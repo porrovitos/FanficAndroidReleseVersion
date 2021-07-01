@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/text_choose_page_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Choose your Preferences"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/image_choose_page_preferences"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/picture_choose_preferences"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_choose_page_preferences"/>
+
+    <Button
+        android:id="@+id/button_choose_page_finish"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_below="@id/image_choose_page_preferences"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

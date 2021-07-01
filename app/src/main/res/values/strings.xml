@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">fanfiq</string>
+    <string name="title_home">Home</string>
+    <string name="title_add">Add Fanfic</string>
+    <string name="title_account">My Account</string>
+    <string name="create_fanfic">Create Fanfic</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="registeration">Registeration</string>
+    <string name="your_nickname">Your Nickname</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="register">Register</string>
+    <string name="have_account_sign_in">Have account? Sign In!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="retry">Retry</string>
+    <string name="server_connection_error">Server connection error</string>
+    <string name="dont_have_account_register">Dont have account? Register!</string>
+    <string name="add_part_to_fanfic">Add part to Fanfic</string>
+    <string name="fanfic_name">Fanfic Name</string>
+    <string name="subtext">Subtext</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="date">Date: </string>
+    <string name="author">Author: </string>
+    <string name="name">Name: </string>
+</resources>

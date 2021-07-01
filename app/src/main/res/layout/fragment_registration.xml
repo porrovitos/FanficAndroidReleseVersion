@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textRegisteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/registeration"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/imageRegister"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/picture_login"
+        android:layout_marginTop="-40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textRegisteration"/>
+
+    <EditText
+        android:id="@+id/inputNicknameReg"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageRegister"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/your_nickname"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/inputEmailReg"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputNicknameReg"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/your_email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/inputPasswordReg"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputEmailReg"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/your_password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:textColor="@color/warning"
+        android:layout_marginTop="15dp"
+        android:id="@+id/warningReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPasswordReg"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button_registerReg"
+        android:layout_marginTop="15dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_below="@id/warningReg"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/text_go_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:text="@string/have_account_sign_in"
+        android:textSize="20dp"
+        android:layout_below="@id/button_registerReg"/>
+
+
+
+</RelativeLayout>
